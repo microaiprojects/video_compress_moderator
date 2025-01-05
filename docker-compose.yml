@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   frontend:
-    image: ghcr.io/MicroAiProjects/video_compress_moderator/frontend:latest
+    image: ghcr.io/microaiprojects/video_compress_moderator/frontend:latest
     env_file:
       - .env
     ports:
@@ -14,7 +14,7 @@ services:
     restart: unless-stopped
 
   backend:
-    image: ghcr.io/MicroAiProjects/video_compress_moderator/backend:latest
+    image: ghcr.io/microaiprojects/video_compress_moderator/backend:latest
     env_file:
       - .env
     expose:
